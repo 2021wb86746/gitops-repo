@@ -1,0 +1,14 @@
+resources:
+  - ../../base
+ 
+# You can override values here for the dev environment
+nameSuffix: -dev
+ 
+images:
+  - name: myregistry/myapp
+    newTag: dev-latest
+```
+ 
+* `resources: - ../../base` → references the base resources.
+* `nameSuffix` → appends `-dev` to Deployment/Service names to distinguish environments.
+* `images` → override image tag for this environment.
