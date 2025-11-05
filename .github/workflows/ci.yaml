@@ -26,11 +26,11 @@ jobs:
         with:
           context: .
           push: true
-          tags: pavankalyan787/nginx-webapp:latest
+          tags: pavankalyan787/nginx-webapp1:latest
 
       - name: Update K8s Manifest in GitOps repo
         run: |
-          sed -i "s|image: pavankalyan787/nginx-webapp:.*|image: pavankalyan787/nginx-webapp:latest|g" ./gitops-repo/base/deployment.yaml
+          sed -i "s|image: pavankalyan787/nginx-webapp1:.*|image: pavankalyan787/nginx-webapp1:latest|g" ./gitops-repo/base/deployment.yaml
 
       - name: Commit and Push updated manifest
         run: |
