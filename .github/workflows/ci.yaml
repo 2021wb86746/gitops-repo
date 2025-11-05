@@ -30,7 +30,7 @@ jobs:
 
       - name: Update K8s Manifest in GitOps repo
         run: |
-          sed -i "s|image: pavankalyan787/nginx-webapp1:.*|image: pavankalyan787/nginx-webapp1:latest|g" ./gitops-repo/base/deployment.yaml
+          sed -i "s|image: pavankalyan787/nginx-webapp1:.*|image: pavankalyan787/nginx-webapp1:latest|g" ./base/deployment.yaml
 
       - name: Commit and Push updated manifest
         run: |
