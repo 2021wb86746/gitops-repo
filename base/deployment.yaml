@@ -16,6 +16,6 @@ spec:
         - name: dockerhub-secret
       containers:
       - name: myapp
-        image: pavankalyan787/nginx-webapp:latest
+        image: pavankalyan787/nginx-webapp1:latest
         ports:
         - containerPort: 80
