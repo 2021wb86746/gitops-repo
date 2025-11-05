@@ -7,4 +7,4 @@ nameSuffix: -dev
 # Override image tag for dev deployment
 images:
   - name: pavankalyan787/nginx-webapp1
-    newTag: dev-latest
+    newTag: latest
