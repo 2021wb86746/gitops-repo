@@ -12,6 +12,8 @@ spec:
       labels:
         app: myapp
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
       - name: myapp
         image: pavankalyan787/nginx-webapp:latest
