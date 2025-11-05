@@ -1,14 +1,10 @@
 resources:
   - ../../base
- 
-# You can override values here for the dev environment
+
+# Add a suffix to distinguish dev environment
 nameSuffix: -dev
- 
+
+# Override image tag for dev deployment
 images:
-  - name: myregistry/myapp
+  - name: pavankalyan787/nginx-webapp 
     newTag: dev-latest
-```
- 
-* `resources: - ../../base` → references the base resources.
-* `nameSuffix` → appends `-dev` to Deployment/Service names to distinguish environments.
-* `images` → override image tag for this environment.
